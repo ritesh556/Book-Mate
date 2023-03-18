@@ -1,0 +1,59 @@
+.add-book{
+
+    h2{
+        margin-bottom: 2.5rem;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 5rem;
+
+        .book-details-form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+
+            input,textarea{
+                padding: 1.5rem 1rem ;
+                font-size: 2rem;
+                border-radius: 1rem;
+                outline: none;
+                border: none;
+                background-color: rgb(232, 230, 230);
+            }
+
+            .genre{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+
+                input[type="checkbox"]{
+                    width: 1.15em;
+                    height: 1.15em;
+                    border: 0.15em solid currentColor;
+                    border-radius: 0.15em;
+
+                }
+            }
+
+           .btns{
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+
+            button{
+                margin-top: 2rem;
+            }
+           }
+        }
+
+        .book-img-upload{
+            img{
+                width: 100%;
+                border-radius: 2rem;
+            }
+        }
+    }
+}

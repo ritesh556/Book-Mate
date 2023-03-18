@@ -1,0 +1,41 @@
+.container{
+    h2{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .book-search-bar{
+
+        // This field is to be improved using grid
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        background-color: gray;
+        color: white;
+
+        input{
+            padding: 1rem 0.4rem ;
+            max-width: 14rem;
+            font-size: 2rem;
+            border-radius: 1rem;
+            outline: none;
+            border: none;
+        }
+
+        select{
+            outline: none;
+            border: none;
+            font-size: 2rem;
+            padding: 1rem 0.4rem;
+            border-radius: 1rem;
+        }
+
+    }
+
+    .books{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 5rem;
+    }
+}

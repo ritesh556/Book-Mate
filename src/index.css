@@ -1,13 +1,72 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+
+
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+    font-size: 62.5%;
 }
+
+.container{
+    padding: 4rem 10rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto Slab', serif;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+h4{
+    font-size: 2.6rem;
+}
+
+p, label{
+    font-size: 2rem;
+    font-family: 'Lora', serif;
+}
+
+button{
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid purple;
+    color: purple;
+    border-radius: 1rem;
+}
+
+a{
+    color: inherit;
+}
+
+
+
+/* Font Family Choices */
+
+/* for headings */
+/* font-family: 'Roboto Slab', serif; */
+
+/* for paragraphs */
+/* font-family: 'Lora', serif; */

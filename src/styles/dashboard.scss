@@ -1,0 +1,15 @@
+.dashboard{
+    display: flex;
+
+    .dashboard-container{
+        flex:6;
+        padding: 4rem 6rem;
+
+        .widgets{
+            display: flex;
+            padding: 2rem;
+            gap: 2rem;
+        }
+      
+    }
+}

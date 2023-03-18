@@ -1,0 +1,56 @@
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
+    .profile-pic-bio{
+        // text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        .profile-pic{
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 2rem;
+        }
+
+        .username{
+            font-size: 3rem;
+            padding-bottom:1rem ;
+            border-bottom: 1px solid gray;
+        }
+
+        .social-icons{
+            display: flex;
+            gap: 1rem;
+
+            .icon{
+                font-size: 3rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .profile-details{
+
+        .profile-info{
+            margin-top: 4rem;
+            line-height: 4rem;
+
+            p{
+                display: flex;
+                gap: 2rem;
+                align-items: center;
+
+                .edit-icons{
+                    color: gray;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

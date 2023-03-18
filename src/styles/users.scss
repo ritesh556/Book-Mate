@@ -1,0 +1,41 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 2rem;
+
+    thead {
+        background-color: #f2f2f2;
+
+        th {
+            padding: 10px;
+            text-align: left;
+          }
+      }
+
+    tbody{
+        td {
+            padding: 10px;
+            text-align: left;
+            vertical-align: middle;
+            border-bottom: 1px solid #ddd;
+
+            img {
+                max-width: 50px;
+                max-height: 50px;
+                border-radius: 50%;
+            }
+
+            button {
+                background-color: #fff;
+                border: none;
+                color: #007bff;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #007bff;
+                    color: #fff;
+                }
+            }
+        }
+    }
+  }
