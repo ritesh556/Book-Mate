@@ -19,7 +19,11 @@ const Login = () => {
       Navigate("/dashboard");
     }
     else{console.log("error")
-    seterror("Username or password incorrect")}
+    seterror(" incorrect Username or password")}
+    setTimeout(() => {
+      seterror("")
+      
+    }, 5000);
   }
 
   return (

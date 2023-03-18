@@ -15,6 +15,8 @@ import OTP from "./pages/login/OTP";
 import { Users } from "./pages/admin/Users";
 import Books from "./pages/admin/Books";
 import Notification from "./pages/admin/Notification";
+import Userdashboard from "./pages/user/Userdashboard";
+
 
 
 function App() {
@@ -26,12 +28,13 @@ function App() {
         <Route path="/dashboard/users" element={<Users/>}/>
         <Route path="/dashboard/books" element={<Books/>}/>
         <Route path="/dashboard/notification" element={<Notification/>} />
+        <Route path="/userdashboard" element={<Userdashboard/>} />
 
 
         {/* Need to be imporved routes */}
         <Route path="/" element={<Home />} />
         <Route path="/library" element={<Library/>} />
-        <Route path="/library/detail" element={<BookDetail />} />
+        
         <Route path="/library/detail/:i" element={<BookDetail />} />
         <Route path="/dashboard" element={<Dashboard/>} />
         <Route path="/login" element={<Login/>} />
