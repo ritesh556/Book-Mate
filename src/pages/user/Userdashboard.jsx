@@ -43,8 +43,11 @@ const Userdashboard = () => {
       </div>
 
       <div className="loyalty-program">
-        <h2>Loyalty Program</h2>
-        <p>Join our loyalty program and earn points for every purchase you make! Redeem your points for discounts on future purchases.</p>
+        <h2>My books</h2>
+       <ul>
+        <li>Harry potter</li>
+        <li>one piece</li>
+       </ul>
       </div>
 
       <div className="book-recommendations">

@@ -48,7 +48,7 @@ function App() {
         <Route path="/register" element={<Register/>} />
         <Route path="/profile" element={<UserInfo/>} />
         <Route path="/profile/changepassword" element={<ChangePassword/>} />
-        <Route path="profile/add" element={<AddBook/>} />
+        <Route path="/profile/user/addbook" element={<AddBook/>} />
         <Route path="dashboard/profile/admin/users" element={<Users/>} />
         <Route path="dashboard/profile/admin/Books" element={<Books/>} />
         <Route path="dashboard/profile/admin/notification" element={<Notification/>} />

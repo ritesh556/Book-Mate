@@ -55,4 +55,38 @@
             flex-direction: column;
         }
    }
-    
+   .navbar {
+    /* desktop styles */
+    /* ... */
+  
+    /* mobile styles */
+    @media only screen and (max-width: 768px) {
+      .nav-list {
+        display: none;
+      }
+  
+      .burger {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+  
+        .bar {
+          height: 3px;
+          width: 20px;
+          margin: 4px 0;
+          background-color: black;
+        }
+      }
+  
+      &.open {
+        .nav-list {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 2rem;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  

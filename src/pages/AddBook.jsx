@@ -1,23 +1,38 @@
-import React from 'react'
+import React ,{ useState }  from 'react'
+
 import '../styles/addbook.scss'
 import Book from '../assets/book.jpg'
 
 const AddBook = () => {
+  const [image, setImage] = useState(Book);
+  const handleImageChange = (e) => {
+    const file = e.target.files[0];
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      setImage(reader.result);
+    };
+
+    if (file) {
+      reader.readAsDataURL(file);
+    }
+  };
+
   return (
     <div className='add-book container'>
       <h2>Please Enter Book Details</h2>
 
         <div className="grid">
 
-            <form action="" className='book-details-form'>
+            <form action="" className='book-details-form' >
             <label htmlFor="book-title">Title</label>
-            <input type="text" id='book-title' name='book-title' />
+            <input type="text" id='book-title' name='book-title' required  />
 
             <label htmlFor="author">Author</label>
-            <input type="text" id='author' name='author' />
+            <input type="text" id='author' name='author' required  />
 
             <label for="publication">Publication</label>
-            <input type="text" id='publication' name='publication' />
+            <input type="text" id='publication' name='publication' required  />
 
             <label htmlFor="genre">Genre</label>
             <div className="genre">
@@ -34,16 +49,18 @@ const AddBook = () => {
             </div>
 
             <label htmlFor="published-year">Published Year</label>
-            <input type="text" id='published-year' name='published-year' />
+            <input type="text" id='published-year' name='published-year' required  />
 
             <label htmlFor="edition">Edition</label>
-            <input type="text" id='edition' name='edition' />
+            <input type="text" id='edition' name='edition' required  />
 
             <label htmlFor="address">Address</label>
-            <input type="text" id='address' name='address' />
+            <input type="text" id='address' name='address ' required  />
+            <label htmlFor="price">Price</label>
+            <input type="number" id='price' name='price' required  />
 
             <label htmlFor="about-book">About This Book</label>
-            <textarea name="about-book" id="about-book" cols="30" rows="10"></textarea>
+            <textarea name="about-book" id="about-book" cols="30" rows="10" required ></textarea>
 
             <div className="btns">
               <button type='submit'>Add Book</button>
@@ -54,8 +71,8 @@ const AddBook = () => {
             </form>
 
             <div className="book-img-upload">
-                <img src={Book} alt="" />
-                <input type="file" />
+                <img src={image} alt="" />
+                <input type="file" onChange={handleImageChange} required />
             </div>
         </div>      
     </div>

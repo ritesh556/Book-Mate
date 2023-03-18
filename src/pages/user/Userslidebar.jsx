@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../styles/userslidebar.scss'
+import { Link } from 'react-router-dom'
+
 
 
 import UserPic from  '../../assets/user.jpg'
@@ -23,8 +25,10 @@ const Usersidebar = ({ name="Ritesh", email }) => {
             <ul>
                 <li>Dashboard</li>
                 <li>Profile</li>
+                <li> <Link to="/libary"> Request Book </Link> </li>
+                <li> <Link to="/profile/user/addbook"> Add Book </Link></li>
                 <li>Settings</li>
-                <li>Log out</li>
+                <li> <Link to="/login"> Log out </Link> </li>
             </ul>
         </div>
     </div>

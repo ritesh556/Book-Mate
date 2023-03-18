@@ -61,6 +61,11 @@ const BookDetail = () => {
                     </tr>
 
                     <tr>
+                        <th>Price</th>
+                        <td>RS.500</td>
+                    </tr>
+
+                    <tr>
                         <th>Location:</th>
                         <td>Biratnagar, Morang</td>
                     </tr>
