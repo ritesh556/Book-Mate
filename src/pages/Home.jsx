@@ -2,6 +2,7 @@ import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import '../styles/home.scss'
 import User from '../assets/user.jpg'
+import Starrating from '../components/fontawesome icons/Starrating'
 
 import Woman from '../assets/woman.jpg'
 
@@ -41,24 +42,28 @@ const Home = () => {
                     <div className="card">
                         <img src={User} alt="User" />
                         <p className="profession">Bar Dancer</p>
+                        <p> <Starrating rating={2.5}/> </p>
                         <p className="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea eius quisquam error harum cupiditate, ipsum voluptate et repudiandae culpa!</p>
                     </div>
                     
                     <div className="card">
                         <img src={User} alt="User" />
                         <p className="profession">Bar Dancer</p>
+                        <p> <Starrating rating={2.5}/> </p>
                         <p className="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea eius quisquam error harum cupiditate, ipsum voluptate et repudiandae culpa!</p>
                     </div>
                     
                     <div className="card">
                         <img src={User} alt="User" />
                         <p className="profession">Bar Dancer</p>
+                        <p> <Starrating rating={2.5}/> </p>
                         <p className="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea eius quisquam error harum cupiditate, ipsum voluptate et repudiandae culpa!</p>
                     </div>
                     
                     <div className="card">
                         <img src={User} alt="User" />
                         <p className="profession">Bar Dancer</p>
+                        <p> <Starrating rating={2.5}/> </p>
                         <p className="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea eius quisquam error harum cupiditate, ipsum voluptate et repudiandae culpa!</p>
                     </div>
                 </div>

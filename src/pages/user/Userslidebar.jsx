@@ -25,7 +25,7 @@ const Usersidebar = ({ name="Ritesh", email }) => {
             <ul>
                 <li>Dashboard</li>
                 <li>Profile</li>
-                <li> <Link to="/libary"> Request Book </Link> </li>
+                <li> <Link to="/library"> Request Book </Link> </li>
                 <li> <Link to="/profile/user/addbook"> Add Book </Link></li>
                 <li>Settings</li>
                 <li> <Link to="/login"> Log out </Link> </li>
