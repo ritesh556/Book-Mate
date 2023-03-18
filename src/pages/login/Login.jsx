@@ -18,6 +18,9 @@ const Login = () => {
       // navigate to admin page if email and password match
       Navigate("/dashboard");
     }
+    else if (email==="user@user" && password === "user"){
+      Navigate("/Userdashboard")
+    }
     else{console.log("error")
     seterror(" incorrect Username or password")}
     setTimeout(() => {

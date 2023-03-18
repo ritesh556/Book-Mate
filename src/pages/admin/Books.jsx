@@ -1,10 +1,18 @@
 import React from 'react'
 import User from '../../assets/book.jpg'
+
+import '../../styles/dashboard.scss'
 import '../../styles/users.scss'
+import Sidebar from '../../components/Sidebar'
 
 const Books = () => {
   return (
-    <div>
+    
+    <div className='dashboard'>
+        <div>
+            <Sidebar/>
+        </div>
+        
         <table>
             <thead>
                 <tr>
@@ -58,6 +66,7 @@ const Books = () => {
         </table>
 
     </div>
+    
   )
 }
 

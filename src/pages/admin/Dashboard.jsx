@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from '../../components/Sidebar'
+
 import '../../styles/dashboard.scss'
 import Widget from '../../components/Widget'
 

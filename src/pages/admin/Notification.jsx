@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import '../../styles/notification.scss'
+import Sidebar from '../../components/Sidebar'
 
 const Notification = () => {
 
@@ -21,6 +22,12 @@ const Notification = () => {
     }
 
   return (
+    <>
+      <div className='dashboard'>
+    <div>
+    <Sidebar/>
+   
+    </div>
     <div className='notifications'>
       <form className='notification-form' onSubmit={handleSubmit}>
       <label htmlFor="title">Title:</label>
@@ -32,6 +39,9 @@ const Notification = () => {
       <input type="submit" value="Send Notification" />
     </form>
     </div>
+    </div>
+    
+    </>
   )
 }
 

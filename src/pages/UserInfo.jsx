@@ -4,6 +4,7 @@ import '../styles/userinfo.scss'
 import {BsFacebook, BsInstagram, BsTwitter} from 'react-icons/bs'
 import {CiEdit} from 'react-icons/ci'
 
+
 import User from '../assets/user.jpg'
 
 
@@ -15,6 +16,7 @@ const UserInfo = () => {
     cursor:'pointer'
   }
   return (
+   
     <div className='profile container'>
       <div className='profile-pic-bio'>
         <img className='profile-pic' src={User} alt="user" />
@@ -42,6 +44,7 @@ const UserInfo = () => {
         </div>
       </div>
     </div>
+    
   )
 }
 

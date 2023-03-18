@@ -1,9 +1,16 @@
 import React from 'react'
 import User from '../../assets/user.jpg'
+import Sidebar from '../../components/Sidebar'
+
+
+
 import '../../styles/users.scss'
 
 export const Users = () => {
-  return (
+  return ( <>
+    <div className='dashboard'>
+        <div>
+      <Sidebar/> </div>
     <div className='all-users'>
         <table>
             <thead>
@@ -93,5 +100,7 @@ export const Users = () => {
         </table>
 
     </div>
+   </div>
+   </>
   )
 }

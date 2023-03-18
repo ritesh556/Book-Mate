@@ -14,15 +14,7 @@ export  const books = [
 
  const Book = () => {
     const navigate = useNavigate()
-   
-  
-
-
      
-
-   
-    
-    
     const bookCard = {
         display: 'flex',
         flexDirection:'column',

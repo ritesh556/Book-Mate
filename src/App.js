@@ -19,11 +19,16 @@ import Userdashboard from "./pages/user/Userdashboard";
 
 
 
+
 function App() {
   return (
    <div>
+     
+     
       <Navbar />
+      
       <Routes>
+      
         {/* Temporary Routes */}
         <Route path="/dashboard/users" element={<Users/>}/>
         <Route path="/dashboard/books" element={<Books/>}/>
@@ -48,9 +53,15 @@ function App() {
         <Route path="dashboard/profile/admin/Books" element={<Books/>} />
         <Route path="dashboard/profile/admin/notification" element={<Notification/>} />
         <Route path="*" element={<p style={{padding: "100px",marginLeft:"100px",fontSize:"30px",color:"red"}}>There's nothing here: 404!</p>} />
+        
       </Routes>
+      
+      
+      
+     
    </div>
   );
 }
+
 
 export default App;
