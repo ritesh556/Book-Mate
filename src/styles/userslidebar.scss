@@ -7,7 +7,7 @@
     padding: 20px;
     box-sizing: border-box;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 300;
   }
   
   .user-detail {
@@ -60,15 +60,20 @@
   ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-bottom: 0;
   }
   
   li {
-    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
     cursor: pointer;
+    height: 30px;
+
   }
   
   li:hover {
+    height: 30px;
     color: #2196f3;
+    background-color: #666;
   }
   

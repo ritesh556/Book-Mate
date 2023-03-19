@@ -1,0 +1,35 @@
+.footer {
+    background-color: rgb(74, 78, 7);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  
+  .contact-info__item {
+    margin-right: 20px;
+  }
+  
+  .email {
+    color: #fff;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  .copywrite {
+    font-size: 16px;
+    margin-top: 0;
+    text-align: center;
+  }
+  

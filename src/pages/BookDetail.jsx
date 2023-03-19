@@ -21,7 +21,7 @@ const BookDetail = () => {
             <img src={book.imgurl} alt="bookimg" />
             <h2 className='book-title'>{book.name}</h2>
             <h4>About This Book:</h4>
-            <p>"{book.name} of Biratnagar" is the third book in the Harry Potter series written by J.K. Rowling. The story follows Harry Potter, a young wizard, during his third year at Hogwarts School of Witchcraft and Wizardry. Harry's summer is disrupted when an infamous criminal named Sirius Black escapes from the wizard prison, Azkaban, and is believed to be seeking revenge on Harry. Along with his best friends, Ron and Hermione, Harry sets out to uncover the truth about Sirius Black and his connection to Harry's family. The book is filled with magical creatures, time travel, and important revelations about the past and future of the wizarding world.</p>
+            <p>{book.About_Book}</p>
         </div>
 
         <div className="book-details">
@@ -37,37 +37,37 @@ const BookDetail = () => {
                     
                     <tr>
                         <th>Author:</th>
-                        <td>JK Rowling</td>
+                        <td>{book.Author}</td>
                     </tr>
 
                     <tr>
                         <th>Publication:</th>
-                        <td>Warner Bros Publications</td>
+                        <td>{book.publication}</td>
                     </tr>
 
                     <tr>
                         <th>Type:</th>
-                        <td>Science Fiction</td>
+                        <td>{book.Type}</td>
                     </tr>
                     
                     <tr>
                         <th>Published Year:</th>
-                        <td>2007</td>
+                        <td>{ book.Published_Year}</td>
                     </tr>
                     
                     <tr>
                         <th>Edition:</th>
-                        <td>First</td>
+                        <td>{book.Edition}</td>
                     </tr>
 
                     <tr>
                         <th>Price</th>
-                        <td>RS.500</td>
+                        <td>{book.Price}</td>
                     </tr>
 
                     <tr>
                         <th>Location:</th>
-                        <td>Biratnagar, Morang</td>
+                        <td>{book.Location}</td>
                     </tr>
                 </tbody>
             </table>

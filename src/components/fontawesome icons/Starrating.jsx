@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/star.scss'
 import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 
 const Starrating = ({ rating }) => {
@@ -18,7 +19,7 @@ const Starrating = ({ rating }) => {
     stars.push(<FaStarHalfAlt key="star-half" />);
   }
   return (
-    <div>
+    <div className='star'>
       {stars}
     </div>
   );

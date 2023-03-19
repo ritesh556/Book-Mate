@@ -63,7 +63,7 @@ const Home = () => {
                     <div className="card">
                         <img src={User} alt="User" />
                         <p className="profession">Bar Dancer</p>
-                        <p> <Starrating rating={2.5}/> </p>
+                        <p> <Starrating rating={2.5} editable={true}/> </p>
                         <p className="review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ea eius quisquam error harum cupiditate, ipsum voluptate et repudiandae culpa!</p>
                     </div>
                 </div>
